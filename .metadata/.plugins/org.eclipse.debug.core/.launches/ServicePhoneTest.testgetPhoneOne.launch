@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.junit.launchconfig">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/spring63.test/src/test/java/com/spring63/test/service/ServicePhoneTest.java"/>
+<listEntry value="/spring65.best/src/test/java/com/spring65/best/ServicePhoneTest.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
@@ -10,7 +10,7 @@
 <booleanAttribute key="org.eclipse.jdt.junit.KEEPRUNNING_ATTR" value="false"/>
 <stringAttribute key="org.eclipse.jdt.junit.TESTNAME" value="testGetPhoneOne"/>
 <stringAttribute key="org.eclipse.jdt.junit.TEST_KIND" value="org.eclipse.jdt.junit.loader.junit4"/>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.spring63.test.service.ServicePhoneTest"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="spring63.test"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.spring65.best.ServicePhoneTest"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="spring65.best"/>
 <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-ea"/>
 </launchConfiguration>

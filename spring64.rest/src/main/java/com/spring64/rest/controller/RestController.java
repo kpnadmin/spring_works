@@ -1,9 +1,7 @@
 package com.spring64.rest.controller;
 
-import java.text.DateFormat;
 import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -37,10 +35,10 @@ public class RestController {
 	 */
 	@RequestMapping(value = "/rest/currentversion", method = {RequestMethod.GET, RequestMethod.POST})
 	@ResponseBody
-	public int currentversion(Model model) {
+	public long currentversion(Model model) {
 		logger.info("Welcome home! The client locale is {}.");
-	
-		return 1;
+		    
+		return new Date().getTime();
 	}
 	   @RequestMapping(value = "/rest/Login", method = {RequestMethod.GET, RequestMethod.POST})
 	    @ResponseBody

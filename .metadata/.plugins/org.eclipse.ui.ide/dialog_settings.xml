@@ -30,10 +30,9 @@
 		</list>
 	</section>
 	<section name="NewWizardAction">
-		<item value="org.springsource.ide.eclipse.gradle.wizards.new" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<item value="com.springsource.sts.wizard.template" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.eclipse.buildship.ui.creationwizards"/>
-			<item value="org.springsource.ide.eclipse.gradle.wizards.new.category"/>
+			<item value="org.springframework.ide.eclipse.beans.ui.wizards.category"/>
 		</list>
 	</section>
 	<section name="ChooseWorkspaceDialogSettings">

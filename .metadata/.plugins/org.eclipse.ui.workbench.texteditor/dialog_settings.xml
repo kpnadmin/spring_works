@@ -9,20 +9,20 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="searchValue" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="testInsertPhoneList"/>
-			<item value="fail(&quot;Not yet implemented&quot;);"/>
-			<item value="\"/>
-			<item value="   // TODO Auto-generated method stub"/>
+			<item value="searchValue"/>
+			<item value="delete"/>
+			<item value=" fail(&quot;Not yet implemented&quot;);"/>
+			<item value="// TODO Auto-generated method stub"/>
+			<item value="mapper.mysql.mapperPhone."/>
 			<item value=" // TODO Auto-generated method stub"/>
-			<item value="int"/>
-			<item value="Integer"/>
-			<item value="e"/>
+			<item value="`"/>
+			<item value="testInsertPhoneList"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>

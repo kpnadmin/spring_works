@@ -11,4 +11,7 @@
 <typeInfo handle="=spring64.rest/src\/main\/java&lt;com.spring64.rest.dao{IDaoPerson.java[IDaoPerson" modifiers="513" timestamp="1500618950855"/>
 <typeInfo handle="=spring64.rest/src\/main\/java&lt;com.spring64.rest.service{IServicePerson.java[IServicePerson" modifiers="513" timestamp="1500619689999"/>
 <typeInfo handle="=spring64.rest/src\/main\/java&lt;com.spring64.rest.service{ServicePerson.java[ServicePerson" modifiers="1" timestamp="1500620087851"/>
+<typeInfo handle="=spring65.best/src\/main\/java&lt;com.spring65.best.dao{IDaoPhone.java[IDaoPhone" modifiers="513" timestamp="1500860887822"/>
+<typeInfo handle="=spring65.best/src\/main\/java&lt;com.spring65.best.service{IServicePhone.java[IServicePhone" modifiers="513" timestamp="1500861263459"/>
+<typeInfo handle="=spring65.best/src\/main\/java&lt;com.spring65.best.service{ServicePhone.java[ServicePhone" modifiers="1" timestamp="1500861516927"/>
 </typeInfoHistroy>
