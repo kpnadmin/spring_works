@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=spring21.aop/src\/main\/java&lt;dao{IDaoProduct.java[IDaoProduct" modifiers="513" timestamp="1499393633485"/>
+<typeInfo handle="=spring21.aop/src\/main\/java&lt;service{IServiceProduct.java[IServiceProduct" modifiers="513" timestamp="1499393403989"/>
+<typeInfo handle="=spring21.aop/src\/main\/java&lt;service{ServiceProduct.java[ServiceProduct" modifiers="1" timestamp="1499652220975"/>
+<typeInfo handle="=spring61.mvc/src\/main\/java&lt;com.spring61.mvc.service{IServicePhone.java[IServicePhone" modifiers="513" timestamp="1500001015237"/>
+<typeInfo handle="=spring62.phone/src\/main\/java&lt;com.spring62.phone.dao{IDaoPhone.java[IDaoPhone" modifiers="513" timestamp="1500517990653"/>
+<typeInfo handle="=spring62.phone/src\/main\/java&lt;com.spring62.phone.service{IServicePhone.java[IServicePhone" modifiers="513" timestamp="1500425971211"/>
+<typeInfo handle="=spring63.test/src\/main\/java&lt;com.spring63.test.dao{IDaoPhone.java[IDaoPhone" modifiers="513" timestamp="1500522481593"/>
+<typeInfo handle="=spring63.test/src\/main\/java&lt;com.spring63.test.service{IServicePhone.java[IServicePhone" modifiers="513" timestamp="1500522793040"/>
+<typeInfo handle="=spring64.rest/src\/main\/java&lt;com.spring64.rest.dao{IDaoPerson.java[IDaoPerson" modifiers="513" timestamp="1500618950855"/>
+<typeInfo handle="=spring64.rest/src\/main\/java&lt;com.spring64.rest.service{IServicePerson.java[IServicePerson" modifiers="513" timestamp="1500619689999"/>
+<typeInfo handle="=spring64.rest/src\/main\/java&lt;com.spring64.rest.service{ServicePerson.java[ServicePerson" modifiers="1" timestamp="1500620087851"/>
+</typeInfoHistroy>

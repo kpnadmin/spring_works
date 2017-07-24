@@ -1,0 +1,31 @@
+package com.spring64.rest.service;
+
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.spring64.rest.model.ModelPerson;
+
+public class ServicePerson implements IServicePerson {
+    // SLF4J Logging
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
+    
+    @Override
+    public int Login(ModelPerson person) {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+    
+    @Override
+    public List<ModelPerson> getPersonList(ModelPerson person) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+    
+    @Override
+    public int insertPerson(ModelPerson person) {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+}

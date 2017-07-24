@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.wst.html.ui.internal.preferences.ui.HTMLTemplatePreferencePage$HTMLEditTemplateDialog_dialogBounds">
+		<item value="612" key="DIALOG_WIDTH"/>
+		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
+		<item value="330" key="DIALOG_HEIGHT"/>
+		<item value="102" key="DIALOG_X_ORIGIN"/>
+		<item value="192" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="testInsertPhoneList"/>
+			<item value="fail(&quot;Not yet implemented&quot;);"/>
+			<item value="\"/>
+			<item value="   // TODO Auto-generated method stub"/>
+			<item value=" // TODO Auto-generated method stub"/>
+			<item value="int"/>
+			<item value="Integer"/>
+			<item value="e"/>
+		</list>
+		<list key="replacehistory">
+			<item value=""/>
+			<item value="/"/>
+			<item value="int"/>
+			<item value="ModelPhone"/>
+			<item value="svr"/>
+			<item value="svrphone"/>
+			<item value="writeListResult"/>
+			<item value="di05.annotation"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="261" key="DIALOG_WIDTH"/>
+		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
+		<item value="376" key="DIALOG_HEIGHT"/>
+		<item value="186" key="DIALOG_Y_ORIGIN"/>
+		<item value="428" key="DIALOG_X_ORIGIN"/>
+	</section>
+</section>

@@ -1,0 +1,11 @@
+package com.spring64.rest.model;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class ModelPerson {
+  private String id       = "";      
+  private String name     = "";      
+  private String email    = "";      
+  private String password = "";      
+}

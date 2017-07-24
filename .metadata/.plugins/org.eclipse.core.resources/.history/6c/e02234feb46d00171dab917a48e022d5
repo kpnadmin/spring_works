@@ -1,0 +1,47 @@
+package com.spring63.test.service;
+
+import static org.junit.Assert.*;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class ServicePhoneTest {
+    // SLF4J Logging
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
+    
+    @BeforeClass
+    public static void setUpBeforeClass() throws Exception {
+    }
+    
+    @Test
+    public void testGetPhoneOne() {
+        fail("Not yet implemented");
+    }
+    
+    @Test
+    public void testGetPhoneList() {
+        fail("Not yet implemented");
+    }
+    
+    @Test
+    public void testInsertPhone() {
+        fail("Not yet implemented");
+    }
+    
+    @Test
+    public void testInsertPhoneList() {
+        fail("Not yet implemented");
+    }
+    
+    @Test
+    public void testUpdatePhone() {
+        fail("Not yet implemented");
+    }
+    
+    @Test
+    public void testDeletePhone() {
+        fail("Not yet implemented");
+    }
+}

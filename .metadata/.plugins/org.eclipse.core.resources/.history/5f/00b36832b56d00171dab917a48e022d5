@@ -1,0 +1,59 @@
+package com.spring63.test.service;
+
+import static org.junit.Assert.fail;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class ServicePhoneTest {
+    // SLF4J Logging
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
+    
+    private static ApplicationContext context = null; 
+    private static IServicePhone service  = null; 
+    
+    
+    @BeforeClass
+    public static void setUpBeforeClass() throws Exception {
+    
+        context = new ClassPathXmlApplicationContext("file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml");
+        service = context.getBean("svrphone", IServicePhone.class);
+        
+    
+    }
+    
+    
+    @Test
+    public void testGetPhoneOne() {
+        fail("Not yet implemented");
+    }
+    
+    @Test
+    public void testGetPhoneList() {
+        fail("Not yet implemented");
+    }
+    
+    @Test
+    public void testInsertPhone() {
+        fail("Not yet implemented");
+    }
+    
+    @Test
+    public void testInsertPhoneList() {
+        fail("Not yet implemented");
+    }
+    
+    @Test
+    public void testUpdatePhone() {
+        fail("Not yet implemented");
+    }
+    
+    @Test
+    public void testDeletePhone() {
+        fail("Not yet implemented");
+    }
+}

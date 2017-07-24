@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.mapperPerson">
+    
+   
+   <select id="login" parameterType="ModelPerson" resultType="int">
+   SELECT count(*)
+          FROM TB_person
+         WHERE id = #{id} and pw = #{pw}
+   
+   </select>
+   
+   
+    <select id="getBoardName" parameterType="string" resultType="string">        
+        SELECT pw
+          FROM TB_Person
+         WHERE id = #{id}
+    </select>
+    
+    <select id="getBoardOne" parameterType="string" resultType="ModelBoard">
+        SELECT id, pw, UseYN 
+          FROM TB_Person 
+         WHERE id = #{id}
+    </select>
+    
+    <select id="getBoardList" resultType="ModelBoard">
+        SELECT id, pw, UseYN, InsertUID, InsertDT, UpdateUID, UpdateDT
+          FROM TB_Person
+        ORDER BY pw
+    </select>         
+           
+    <select id="getBoardListResultMap" resultType="ModelBoard">
+        SELECT * 
+          FROM TB_Person 
+    </select>
+    
+        
+    
+     
+    <insert id="insertBoard" parameterType="ModelBoard">
+        INSERT INTO 
+        TB_Person ( id   , pw   , name, email   )
+        VALUES       ( #{id}, #{pw}, #{name}, #{email} )
+    </insert>
+    
+    <update id="updateBoard" parameterType="hashmap">
+        UPDATE TB_Person 
+            SET pw   = #{updateValue.pw}
+              , UseYN     = #{updateValue.UseYN}
+              , UpdateUID = #{updateValue.UpdateUID}
+              , UpdateDT  = #{updateValue.UpdateDT}
+            WHERE 1 = 1 
+              <if test="searchValue.id != null and searchValue.id != ''" >
+              AND id    = #{searchValue.id}
+              </if>
+              <if test="searchValue.pw != null and searchValue.pw != ''">
+              AND pw  = #{searchValue.pw}
+              </if>
+              <if test="searchValue.UseYN != null">
+              AND UseYN    = #{searchValue.UseYN}
+              </if>
+    </update>
+    
+    <delete id="deleteBoard" parameterType="ModelBoard">
+        DELETE FROM TB_Person 
+         WHERE 1 = 1 
+          <if test="id != null and id != ''" >
+          AND id  = #{id}
+          </if>
+          <if test="pw != null and pw != ''">
+          AND pw  = #{pw}
+          </if>
+          <if test="UseYN != null">
+          AND UseYN    = #{UseYN}
+          </if>
+    </delete>
+    
+    <select id="getBoardSearch" parameterType="ModelBoard" resultType="ModelBoard">
+        SELECT id, pw, UseYN 
+          FROM TB_Person
+         WHERE 1 =1 
+           <if  test="id != null and id != ''">
+           AND id LIKE CONCAT('%', #{id},'%')
+           </if>
+           <if  test="pw != null and pw != ''">
+           AND pw LIKE CONCAT('%', #{pw},'%')
+           </if>
+    </select>
+    
+    <select id="getBoardPaging"  parameterType="hashmap"  resultType="ModelBoard">
+        SELECT id, pw, UseYN
+        FROM (
+            SELECT @RNUM := @RNUM + 1 AS r, a.* 
+                FROM (
+                    SELECT 
+                        id, pw, UseYN
+                    FROM 
+                        TB_Person
+                    WHERE 1 = 1
+                        <if test="id != null and id != ''">
+                        AND id = #{id}
+                        </if>
+                        <if test="pw != null and pw != ''">
+                        AND pw LIKE #{searchWord} 
+                        </if>
+                    GROUP BY id, pw, UseYN
+                    ORDER BY id DESC
+                ) a, (SELECT @RNUM:=0) b
+            ) temp
+        WHERE r BETWEEN #{start} AND #{end}
+    </select>  
+    
+    <!-- mysql multi insert
+        INSERT INTO t (col1, col2, col3) 
+               VALUES ('val1_1', 'val1_2', 'val1_3')
+                    , ('val2_1', 'val2_2', 'val2_3')
+                    , ('val3_1', 'val3_2', 'val3_3')
+        ;
+     -->
+    <insert id="insertBoardList" parameterType="java.util.List">
+        INSERT INTO TB_Person( id , pw , UseYN  )
+        VALUES
+            <foreach collection="list" item="item" index="index" open="(" separator="),(" close=")">
+                #{item.id} , #{item.pw} , #{item.UseYN}
+            </foreach>
+    </insert>
+    
+    
+  
+
+</mapper>
