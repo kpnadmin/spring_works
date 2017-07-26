@@ -14,6 +14,8 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\Spring\spring_lecture\spring\spring82.board"/>
+			<item value="D:\Spring\spring_lecture\spring\spring81.bbs"/>
 			<item value="D:\DevTool\workspace\Lecture\Spring\Work"/>
 			<item value="D:\JAVA\workspace\Lecture\Source"/>
 			<item value="C:\Users\Administrator\Downloads\Controller-PhoneController-MyBatis-Spring"/>

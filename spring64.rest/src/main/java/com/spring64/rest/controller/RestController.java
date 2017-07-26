@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -51,7 +51,18 @@ public class RestController {
 	        int result = svr.Login(person);
 	        return result;
 	    }
-	
+
+	   @RequestMapping(value = "/rest/personone", method = {RequestMethod.GET, RequestMethod.POST})
+       @ResponseBody
+       public ModelPerson personone(Model model
+               , @RequestParam(value="id", defaultValue="") String id
+               ) {
+           logger.info("/rest/personone");
+           ModelPerson result = new ModelPerson("valid", "valpw", "valname", "valemail");
+           //int result = svr.Login(person);
+           return result;
+       }
+
 	
 	
 	@RequestMapping(value = "/rest/personlist", method = {RequestMethod.GET, RequestMethod.POST})
@@ -67,16 +78,31 @@ public class RestController {
 	    
 	    return result;
 	}
+	// requestbody 안드로이드 통신시 중요 
 	@RequestMapping(value = "/rest/insertPerson", method = {RequestMethod.GET, RequestMethod.POST})
     @ResponseBody
     public int insertPerson(Model model
-            , @ModelAttribute ModelPerson person
+            , @RequestBody ModelPerson person
             ){
         logger.info("/rest/insertPerson");
         
         int result = -1;
         
         result = svr.insertPerson(person);
+      
+        return result;
+    }
+	// requestbody 안드로이드 통신시 중요 
+    @RequestMapping(value = "/rest/insertPersonList", method = {RequestMethod.GET, RequestMethod.POST})
+    @ResponseBody
+    public int insertPersonList(Model model
+            , @RequestBody List<ModelPerson> persons
+            ){
+        logger.info("/rest/insertPersonList");
+        
+        int result = -1;
+        
+        result = svr.insertPersonList(persons);
       
         return result;
     }

@@ -67,4 +67,19 @@ public class ServicePerson implements IServicePerson {
         
         return result;
     }
+
+    @Override
+    public int insertPersonList(List<ModelPerson> persons) {
+       int result = -1; 
+       
+       try {
+        result = dao.insertPersonList(persons);
+    } catch (Exception e) {
+        // TODO Auto-generated catch block
+        // e.printStackTrace();
+        logger.error("insertPersonList" + e.getMessage() );
+        throw e;
+    }
+        return result;
+    }
 }

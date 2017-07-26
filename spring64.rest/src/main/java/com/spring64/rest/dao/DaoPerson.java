@@ -38,4 +38,10 @@ public class DaoPerson implements IDaoPerson {
         
         return session.insert("mapper.mysql.mapperPerson.insertPerson", person);
     }
+
+    @Override
+    public int insertPersonList(List<ModelPerson> persons) {
+        // TODO Auto-generated method stub
+        return session.insert("mapper.mysql.mapperPerson.insertPersonList",persons);
+    }
 }

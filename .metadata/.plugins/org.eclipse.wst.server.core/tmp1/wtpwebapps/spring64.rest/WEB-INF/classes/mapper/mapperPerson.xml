@@ -12,6 +12,12 @@
    
    </select>
    
+   <select id="getPersonOne" parameterType="string" resultType="ModelPerson">
+        SELECT id, pw, name, email 
+          FROM TB_person 
+         WHERE id = #{id}
+    </select>
+   
     <select id="getPersonList" parameterType = "ModelPerson" resultType="ModelPerson">
         SELECT *
           FROM TB_Person
@@ -22,6 +28,15 @@
         INSERT INTO 
         TB_Person ( id   , pw   , name, email   )
         VALUES       ( #{id}, #{pw}, #{name}, #{email} )
+    </insert>
+    
+    
+     <insert id="insertPersonList" parameterType="java.util.List">
+        INSERT INTO TB_Person( id , pw , name, email)
+        VALUES
+            <foreach collection="list" item="item" index="index" open="(" separator="),(" close=")">
+                #{item.id} , #{item.pw} , #{item.name}, #{item.email}
+            </foreach>
     </insert>
     
    <!--  <update id="updateBoard" parameterType="hashmap">
@@ -98,14 +113,8 @@
                     , ('val3_1', 'val3_2', 'val3_3')
         ;
      -->
-   <!--  <insert id="insertBoardList" parameterType="java.util.List">
-        INSERT INTO TB_Person( id , pw , UseYN  )
-        VALUES
-            <foreach collection="list" item="item" index="index" open="(" separator="),(" close=")">
-                #{item.id} , #{item.pw} , #{item.UseYN}
-            </foreach>
-    </insert>
     
+    <!--
     
    <select id="getBoardOne" parameterType="string" resultType="ModelPerson">
         SELECT id, pw, UseYN 

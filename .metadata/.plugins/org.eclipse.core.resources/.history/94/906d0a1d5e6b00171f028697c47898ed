@@ -1,8 +1,0 @@
-package com.spring62.phone.service;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-public interface IServicePhone {
-    
-}

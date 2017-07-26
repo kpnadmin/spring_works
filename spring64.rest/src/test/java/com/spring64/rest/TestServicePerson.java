@@ -4,6 +4,9 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
 
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 import org.junit.BeforeClass;
@@ -54,8 +57,21 @@ public class TestServicePerson {
     
     @Test
     public void testInsertPerson() {
-        ModelPerson person = new ModelPerson("test1id", "test1pw", "test1name", "test1@email");
+        ModelPerson person = new ModelPerson("test1id", "test1pw", "test1name", "test1email");
         int result = service.insertPerson(person);
         assertEquals(1, result);
     }
+    @Test
+    public void testInsertPersonList() {
+        List<ModelPerson> persons = new ArrayList<ModelPerson>();
+       //String t = new Date();
+        String t = new SimpleDateFormat("yyyyMMddHHmmss").format(Calendar.getInstance().getTime());
+        persons.add(new ModelPerson("t1id"+t, "t1pw", "t1name", "t1email"));
+        persons.add(new ModelPerson("t2id"+t, "t2pw", "t2name", "t2email"));
+       
+        int result = service.insertPersonList(persons);
+        assertEquals(2, result);
+    }
+    
+    
 }

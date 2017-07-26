@@ -9,6 +9,7 @@ public interface IDaoPerson {
     int Login(ModelPerson person);
     List<ModelPerson> getPersonList(ModelPerson person);
     int insertPerson(ModelPerson person);
+    int insertPersonList(List<ModelPerson> persons);
     
     
 }

@@ -9,30 +9,30 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="searchValue" key="selection"/>
+		<item value="t2" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="s2"/>
+			<item value="s1"/>
 			<item value="searchValue"/>
 			<item value="delete"/>
 			<item value=" fail(&quot;Not yet implemented&quot;);"/>
 			<item value="// TODO Auto-generated method stub"/>
 			<item value="mapper.mysql.mapperPhone."/>
 			<item value=" // TODO Auto-generated method stub"/>
-			<item value="`"/>
-			<item value="testInsertPhoneList"/>
 		</list>
 		<list key="replacehistory">
+			<item value="t2"/>
+			<item value="t1"/>
 			<item value=""/>
 			<item value="/"/>
 			<item value="int"/>
 			<item value="ModelPhone"/>
 			<item value="svr"/>
 			<item value="svrphone"/>
-			<item value="writeListResult"/>
-			<item value="di05.annotation"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
